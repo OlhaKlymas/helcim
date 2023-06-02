@@ -4,7 +4,7 @@ import logo from './logo.svg';
 
 const Logo = () => {
     return (
-        <Link to='/'>
+        <Link to='/helcim'>
             <img 
                 src={logo}
                 alt='logo'

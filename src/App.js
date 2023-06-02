@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<HomePage />} />
+        <Route path='/helcim' element={<HomePage />} />
         <Route path='*' element={<NotFoundPage />} />
       </Routes> 
     </Router>
