@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/helcim/static/css/main.31091d5e.css",
+    "main.js": "/helcim/static/js/main.0aeadfc8.js",
+    "static/media/bg.png": "/helcim/static/media/bg.40684f8d7ed556678cd8.png",
+    "static/media/slide3.png": "/helcim/static/media/slide3.7aaf66123af415133a60.png",
+    "static/media/slide2.png": "/helcim/static/media/slide2.b9875e369a2b69e2323e.png",
+    "static/media/phone.png": "/helcim/static/media/phone.af55f0a539803f2d9a7c.png",
+    "static/media/slide1.png": "/helcim/static/media/slide1.373ab40d3458c353151d.png",
+    "static/media/Roboto-Medium.ttf": "/helcim/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
+    "static/media/Roboto-Regular.ttf": "/helcim/static/media/Roboto-Regular.fc2b5060f7accec5cf74.ttf",
+    "static/media/earth.svg": "/helcim/static/media/earth.c280a49b0206ac7e81cfce49d80f3639.svg",
+    "static/media/RedHatDisplay-SemiBoldItalic.ttf": "/helcim/static/media/RedHatDisplay-SemiBoldItalic.bac250d7545eba2547cf.ttf",
+    "static/media/RedHatDisplay-SemiBold.ttf": "/helcim/static/media/RedHatDisplay-SemiBold.2fa1b5134c5bc1df7005.ttf",
+    "static/media/RedHatDisplay-Medium.ttf": "/helcim/static/media/RedHatDisplay-Medium.9225c34038e91f2198b4.ttf",
+    "static/media/RedHatDisplay-Bold.ttf": "/helcim/static/media/RedHatDisplay-Bold.39df9996af4c7b2a1687.ttf",
+    "static/media/map.png": "/helcim/static/media/map.4aff0e62d50dd6fe14e0.png",
+    "static/media/product.png": "/helcim/static/media/product.31d70e4786411e8e15b2.png",
+    "static/media/Helvetica_Neue_Regular.otf": "/helcim/static/media/Helvetica_Neue_Regular.081689ede9bac00ebc91.otf",
+    "static/media/Helvetica_Neue_Medium.otf": "/helcim/static/media/Helvetica_Neue_Medium.83d0efb33c1a0c296f4f.otf",
+    "static/media/northAmerica.svg": "/helcim/static/media/northAmerica.05e4764d35a42d900962e6fe213fad46.svg",
+    "static/media/europe.svg": "/helcim/static/media/europe.85e27b9f4ce2f56ca45902ea15d5fbab.svg",
+    "static/media/logo.svg": "/helcim/static/media/logo.02c5552ffd241edd229235386caee3c9.svg",
+    "static/media/asia.svg": "/helcim/static/media/asia.f80f4c6d926b253dd243cfc1aa673b72.svg",
+    "static/media/latinAmerica.svg": "/helcim/static/media/latinAmerica.5dc154e2ddd5768e8d8c7808e372f7a6.svg",
+    "static/media/map-home.svg": "/helcim/static/media/map-home.07efc5794d0cf7e7cf91804d59596bda.svg",
+    "index.html": "/helcim/index.html",
+    "main.31091d5e.css.map": "/helcim/static/css/main.31091d5e.css.map",
+    "main.0aeadfc8.js.map": "/helcim/static/js/main.0aeadfc8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31091d5e.css",
+    "static/js/main.0aeadfc8.js"
+  ]
+}
