@@ -9,7 +9,7 @@ const NotFoundPage = () => {
       <MainLayout>
         <div className='container not-found-page__container'>
           <h1>Page not found</h1>
-          <Button value='Go home' className='btn--pink' link='/' />
+          <Button value='Go home' className='btn--pink' link='/helcim' />
         </div>
       </MainLayout>
     </div>
