@@ -1,0 +1,64 @@
+h1 {
+    max-width: 790px;
+    width: 90%;
+    line-height: 115%;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Red Hat Display';
+    font-weight: 700;
+    
+    @media screen and (min-width: $tablet) {
+        width: 80%;
+        font-size: 52px;
+    }
+    
+    @media screen and (min-width: $desktop-sm) {
+        font-size: 72px;
+    }
+}
+
+h2 {
+    font-family: 'Red Hat Display';
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 115%;
+    
+    @media screen and (min-width: $tablet) {
+        font-size: 46px;
+    }
+    
+    @media screen and (min-width: $desktop-sm) {
+        font-size: 64px;
+    }
+}
+
+h3 {
+    font-family: 'Red Hat Display';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 115%;
+    
+    @media screen and (min-width: $desktop-sm) {
+        font-size: 48px;
+    }
+}
+
+.text-pink {
+    color: $pink;
+}
+
+.text-pink-dark {
+    color: $pink-dark;
+}
+
+.text-red {
+    color: $red;
+}
+
+.text-purple {
+    color: $purple;
+}
+
+p {
+    color: #635C7F;
+}

@@ -1,0 +1,226 @@
+.hero {
+    @media screen and (min-width: $desktop-sm) {
+        padding-top: $spacer-5;
+    }
+
+    &__container {
+        @include flex($dir: column, $jc: center, $ai: center, $gap: $spacer-5);
+    
+        position: relative;
+        padding-top: $spacer-8;
+        background-color: $green-light;
+        border-radius: 50px;
+        overflow: hidden;
+    
+        @media screen and (min-width: $tablet) {
+            padding-top: $spacer-lg;
+        }
+    }
+
+    &__phone {
+        position: relative;
+        left: 50%;
+        width: 90%;
+
+        @media screen and (min-width: $tablet) {
+            width: auto;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            transform: translateX(-36%);
+        }
+    }
+
+    &__pictures {
+        position: relative;
+        margin-top: $spacer-5;
+
+        @media screen and (min-width: $desktop-sm) {
+            margin-top: 138px;
+            position: static;
+        }
+    }
+
+    &__picture {
+        display: inline-block;
+        padding: $spacer;
+        background-color: $white;
+        box-shadow: 15px 30px 90px rgba(19, 34, 72, 0.12);
+        border-radius: 10px;
+
+        @media screen and (min-width: $desktop-sm) {
+            padding: $spacer-3;
+        }
+    }
+
+    &__picture--map {
+        position: relative;
+        width: 50%;
+        left: 2%;
+        margin-bottom: 300px;
+        
+        @media screen and (min-width: $tablet) {
+            width: 40%;
+        }
+        
+        @media screen and (min-width: $desktop-sm) {
+            position: absolute;
+            bottom: 30%;
+            left: auto;
+            transform: translateX(-90%);
+            max-width: 300px;
+            width: auto;
+            margin-bottom: 0;
+        }
+    }
+
+    &__picture--product {
+        position: absolute;
+        left: 2%;
+        bottom: 37%;
+        opacity: 0.65;
+        
+        @media screen and (min-width: $tablet) {
+            left: -2%;
+            bottom: 43%;                    
+        }
+
+        @media screen and (min-width: $desktop-sm) {
+            right: auto;
+            left: auto;
+            bottom: 13%;
+            transform: translateX(159%);
+        }
+    }
+
+    &__map-wrapper {
+        position: relative;
+    }
+
+    &__map-home {
+        position: absolute;
+        right: 6%;
+        bottom: 19%;
+        width: 11%;
+        max-width: 25px;
+    }
+
+    &__map-way {
+        position: absolute;
+        left: 6%;
+        bottom: 14%;
+        width: 83%;
+        height: auto;
+
+        path {
+            stroke-dasharray: 400;
+            stroke-dashoffset: -400;
+            animation: dash 5s linear infinite forwards;
+        }
+    }
+
+    &__map-text {
+        margin-top: $spacer;
+        color: #828098;
+        font-size: 12px;
+
+        @media screen and (min-width: $desktop-sm) {
+            margin-top: $spacer-2;
+            font-size: 16px;
+        }
+    }
+
+    &__order {
+        position: absolute;
+        top: 25%;
+        right: -30%;
+        transform: scale(0.7);
+        display: inline-block;
+        opacity: 0.8;
+        
+        @media screen and (min-width: $tablet) {
+            right: -10%;
+            transform: scale(1);
+        }
+
+        @media screen and (min-width: $desktop-sm) {
+            top: 27%;
+            right: auto;
+            bottom: 35.3%;
+            transform: scale(1) translateX(133%);
+        }
+    }
+
+    &__order-wrapper {
+        @include flex($dir: column, $ai: center);
+
+        padding: $spacer-3 $spacer-4;
+        margin-bottom: $spacer-2;
+        background-color: $white;
+        box-shadow: 15px 30px 90px rgba(19, 34, 72, 0.12);
+        border-radius: 10px;
+    }
+
+    &__product {
+        @include flex($gap: $spacer-2);
+
+        @media screen and (min-width: $tablet) {
+            gap: $spacer-4;
+        }
+
+        button {
+            font-size: 12px;
+
+            @media screen and (min-width: $tablet) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__product-content {
+        @include flex($dir: column, $gap: $spacer);
+
+        font-size: 12px;
+
+        @media screen and (min-width: $tablet) {
+            gap: $spacer-2;
+            font-size: 16px;
+        }
+    }
+
+    &__product-img {
+        width: 100px;
+        height: 75px;
+        overflow: hidden;
+
+        @media screen and (min-width: $tablet) {
+            width: 133px;
+            height: 100px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__product-divider {
+        width: 100%;
+        max-width: 108px;
+        height: $spacer;
+        background-color: $grey-lighter;
+        border-radius: 9px;
+
+        @media screen and (min-width: $tablet) {
+            height: 11px;
+        }
+    }
+
+    h1, button {
+        position: relative;
+        z-index: 1;
+    }
+}

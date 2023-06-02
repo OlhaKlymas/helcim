@@ -1,0 +1,14 @@
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes moveForward {
+    from {
+        left: -10%;
+    }
+    to {
+        left: 0%;
+    }
+}

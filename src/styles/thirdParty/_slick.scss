@@ -1,0 +1,19 @@
+.slick-slider {
+    overflow: hidden;
+}
+
+.slick-track {
+    @include flex;
+
+    padding-left: $spacer-2;
+    padding-right: $spacer-2;
+    
+    @media screen and (min-width: $tablet) {
+        padding-left: $spacer-4;
+        padding-right: $spacer-4;
+    }
+}
+
+.slick-slide {
+    flex-shrink: 0;
+}

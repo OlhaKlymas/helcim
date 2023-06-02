@@ -1,0 +1,10 @@
+@import './../../../styles/utils/all';
+
+.input {
+    width: 100%;
+    padding: $spacer $spacer-2;
+    background-color: #F1F0F6;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 150%;
+}

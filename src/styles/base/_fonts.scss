@@ -1,0 +1,50 @@
+@import './../utils/mixins';
+
+@include fface(
+  'Red Hat Display',
+  'Red_Hat_Display/RedHatDisplay-Bold.ttf',
+  700
+);
+
+@include fface(
+  'Red Hat Display SemiBold',
+  'Red_Hat_Display/RedHatDisplay-SemiBold.ttf',
+  600
+);
+
+@include fface(
+  'Red Hat Display SemiBoldItalic',
+  'Red_Hat_Display/RedHatDisplay-SemiBoldItalic.ttf',
+  600,
+  italic
+);
+
+@include fface(
+  'Red Hat Display Medium',
+  'Red_Hat_Display/RedHatDisplay-Medium.ttf',
+  500
+);
+
+@include fface(
+  'Helvetica Neue',
+  'Helvetica_Neue/Helvetica_Neue_Regular.otf',
+  400
+);
+
+@include fface(
+  'Helvetica Neue Medium',
+  'Helvetica_Neue/Helvetica_Neue_Medium.otf',
+  500
+);
+
+@include fface(
+  'Roboto',
+  'Roboto/Roboto-Regular.ttf',
+  400
+);
+
+@include fface(
+  'Roboto Medium',
+  'Roboto/Roboto-Medium.ttf',
+  400
+);

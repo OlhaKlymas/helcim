@@ -1,0 +1,40 @@
+.footer {
+    background-color: $orange-light;
+    color: #5E5E7B;
+    font-size: 16px;
+    font-family: 'Roboto';
+
+    &__container {
+        @include flex($gap: $spacer-4, $jc: space-between);
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+        padding-top: $spacer-8;
+        padding-bottom: $spacer-8;
+    
+        @media screen and (min-width: $desktop-sm) {
+            gap: $spacer-8;
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+    }
+
+    &__column {
+        @include flex($dir: column, $gap: $spacer-6);
+    }
+
+    &__row {
+        @include flex($dir: column, $gap: $spacer-2);        
+    }
+
+    &__list {
+        @include flex($dir: column, $gap: $spacer-2);
+    }
+
+    &__title {
+        color: #1D1E46;
+        font-size: 20px;
+        font-family: 'Roboto Medium';
+        line-height: 150%;
+    }
+}

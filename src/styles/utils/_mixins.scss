@@ -1,0 +1,59 @@
+@mixin fface ($family, $path, $svg, $weight: normal, $style: normal) {
+    @font-face {
+        font-family: $family;
+        src: url('../../fonts/' + $path);
+        font-weight: $weight;
+        font-style: $style;
+    }
+}
+
+@mixin flex($dir: row, $jc: flex-start, $ai: flex-start, $gap: 0) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gap;
+}
+
+@mixin btn($color, $text-color, $hover-color, $fs: 16px) {
+    padding: $spacer $spacer-3;
+    background-color: $color;
+    cursor: pointer;
+    border-radius: 5px;
+    color: $text-color;
+    line-height: 160%;
+    font-size: $fs;
+    font-family: 'Roboto Medium', sans-serif;
+
+    &:hover {
+        background-color: $hover-color;
+    }    
+}
+
+@mixin btn-outline($text-color, $hover-color: $purple, $fs: 18px) {
+    position: relative;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    color: $text-color;
+    font-size: $fs;
+    font-family: 'Red Hat Display Medium', sans-serif;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: $hover-color;
+    }
+
+    &:hover {
+        background-color: transparent;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}

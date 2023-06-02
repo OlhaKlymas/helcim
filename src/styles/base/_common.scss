@@ -1,0 +1,64 @@
+@import '../utils/all';
+
+body {
+    background-color: $white;
+    color: $black;
+    font-family: 'Red Hat Display Medium', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.container-wide {
+    width: 100%;
+    padding-left: $spacer;
+    padding-right: $spacer;
+
+    @media screen and (min-width: $tablet) {
+        padding-left: $spacer-4;
+        padding-right: $spacer-4;
+    }
+
+    @media screen and (min-width: $desktop-sm) {
+        padding-left: $spacer-7;
+        padding-right: $spacer-7;
+    }
+}
+
+.container-text {
+    width: 100%;
+    max-width: 900px;
+    padding-left: $spacer-2;
+    padding-right: $spacer-2;
+
+    @media screen and (min-width: $tablet) {
+        padding-left: $spacer-4;
+        padding-right: $spacer-4;
+    }
+
+    @media screen and (min-width: $desktop-md) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.container-fluid {
+    width: 90%;
+    background-color: $white;
+
+    @media screen and (min-width: $tablet) {
+        width: 75.4%;
+    }
+
+    &__content {
+        margin: auto;
+
+        @media screen and (min-width: $desktop-md) {
+            margin-right: calc(15 * (100% - 900px) / 36);
+            margin-left: auto;
+        }
+    }
+}

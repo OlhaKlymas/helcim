@@ -1,0 +1,121 @@
+@import './../../../styles/utils/all';
+
+.cart {
+    position: relative;
+    height: 344px;
+    width: 100%;
+    max-width: 280px;
+
+    &:hover {
+        .front {
+            transform: rotateY(-180deg);
+            opacity: 0;
+        }
+
+        .back {
+            transform: rotateY(0deg);
+            transition: .5s;
+            z-index: 1;
+            box-shadow: 15px 30px 90px rgba(19, 34, 72, 0.12);
+        }
+    }
+}
+
+.side {
+    width: 100%;
+    height: 100%;
+    transition: transform .5s, opacity 0.3s;
+    border: 1px solid $green;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.front {
+    position: relative;
+    z-index: 1;
+    background-color: $green-light;
+}
+
+.frontTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #6A6881;
+    font-family: 'Red Hat Display SemiBold';
+    font-size: 40px;
+    line-height: 115%;
+    text-align: center;
+}
+
+.frontImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.back {
+    @include flex($dir: column, $gap: $spacer-4);
+
+    top: 0;
+    position: absolute;
+    transform: rotateY(-180deg);
+    z-index: 0;
+    padding: 40px 59px 0 59px;
+    background-color: $white;
+    font-family: 'Red Hat Display SemiBold';
+}
+
+.backContent {
+    @include flex($dir: column, $jc: center, $gap: $spacer-3);
+}
+
+.backTitle {
+    min-height: 92px;
+    font-size: 30px;
+    line-height: 115%;
+    text-align: center;
+    
+    @media screen and (min-width: $tablet) {
+        font-size: 40px;
+    }
+}
+
+.row {
+    @include flex($ai: center, $gap: $spacer-2);
+
+    font-size: 18px;
+    line-height: 115%;
+}
+
+.number {
+    @include flex($jc: center, $ai: center);
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $grey-light;
+}
+
+.head {
+    color: #6A6881;
+}
+
+.arrow {
+    @include flex($jc: center, $ai: center);
+
+    position: absolute;
+    bottom: 3px;
+    right: 13px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+
+    svg {
+        width: 40px;
+        position: relative;
+        left: 0%;
+        animation: moveForward 1s infinite alternate;
+    }
+}

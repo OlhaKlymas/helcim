@@ -1,0 +1,44 @@
+@import './../../../styles/utils/all';
+
+.btn {
+    @include btn($purple, $white, $pink);
+
+    text-align: center;
+
+    &--purple {
+        background-color: $purple;
+    }
+
+    &--outline {
+        @include btn-outline($black);
+    }
+
+    &--pink {
+        padding: $spacer $spacer-4;
+        background-color: $pink;
+        font-size: 20px;
+
+        &:hover {
+            background-color: $purple;
+        }
+    }
+
+    &--pink-dark {
+        padding: $spacer $spacer-4;
+        background-color: $pink-dark;
+        font-family: 'Red Hat Display Medium';
+        font-size: 14px;
+
+        &:hover {
+            background-color: $purple;
+        }
+    }
+
+    &--orange {
+        width: 100%;
+        padding: $spacer $spacer-4;
+        background-color: $orange-light;
+        color: $orange-text;
+        font-size: 18px;
+    }
+}

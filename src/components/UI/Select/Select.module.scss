@@ -1,0 +1,27 @@
+@import './../../../styles/utils/all';
+
+.wrapper {
+    position: relative;
+    width: 100%;
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: $spacer-2;
+        top: 45%;
+        width: 7px;
+        height: 7px;
+        border-left: 2px solid #7E7997;
+        border-bottom: 2px solid #7E7997;
+        transform: rotate(-45deg) translateY(-50%);
+    }
+}
+
+select {
+    width: 100%;
+    padding: $spacer $spacer-8 $spacer $spacer-2;
+    background-color: #F1F0F6;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 150%;
+}

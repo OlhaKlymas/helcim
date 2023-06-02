@@ -1,0 +1,64 @@
+.fall-in-love {
+    &__container {
+        @include flex($ai: stretch);
+    }
+
+    &__fluid {
+        position: relative;
+        flex-shrink: 0;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -10%;
+            z-index: 0;
+            height: 110%;
+            width: 100%;
+            background-color: $white;
+        }
+    }
+
+    &__content {
+        @include flex($gap: $spacer-2);
+
+        position: relative;
+        z-index: 1;
+        padding-top: $spacer-lg;
+        padding-bottom: $spacer-lg;
+
+        @media screen and (min-width: $desktop-sm) {
+            gap: $spacer-7;
+            padding-top: 205px;
+            padding-bottom: 270px;
+        }
+    }
+
+    &__img {
+        width: 50px;
+        height: 50px;
+
+        @media screen and (min-width: $desktop-sm) {
+            width: 99px;
+            height: 99px;
+        }
+    }
+
+    &__text {
+        @include flex($dir: column, $gap: $spacer-2);
+
+        font-size: 14px;
+        font-family: 'Roboto';
+        line-height: 160%;
+
+        @media screen and (min-width: $desktop-sm) {
+            gap: $spacer-5;
+            font-size: 20px;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

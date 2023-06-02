@@ -1,0 +1,91 @@
+@import './../thirdParty/slick';
+
+.find-you-belong {
+    background-color: $green-light;
+    border-radius: 50px 50px 0px 0px;
+    
+    &__container {
+        padding-top: $spacer-8;
+    
+        @media screen and (min-width: $tablet) {
+            padding-top: $spacer-lg;
+        }
+    }
+
+    &__description {
+        @include flex($dir: column, $gap: $spacer-2);
+        padding-bottom: $spacer-8;
+    
+        @media screen and (min-width: $tablet) {
+            gap: $spacer-4;
+            padding-bottom: $spacer-lg;
+        }
+    }
+
+    &__info {
+        color: #635C7F;
+        font-size: 20px;
+        line-height: 160%;
+    }
+
+    &__carts {
+        padding-bottom: 80px;
+
+        @media screen and (min-width: $desktop-sm) {
+            @include flex($gap: 60px, $jc: center);
+            flex-wrap: wrap;
+        }
+    }
+
+    &__cart {
+        width: calc(100% / 2 - $spacer-2 / 2);
+        max-width: 280px;
+    
+        @media screen and (min-width: $desktop-sm) {
+            width: calc(100% / 4 - 60px * 3 / 4);
+        }
+    }
+
+    &__fluid {
+        position: relative;
+        z-index: 1;
+        margin-top: 0;
+        border-radius: 0px 50px 0px 0px;
+
+        @media screen and (min-width: $tablet) {
+            margin-top: 80px;
+        }
+    }
+
+    &__quote {
+        @include flex($dir: column, $gap: $spacer-4, $ai: flex-end);
+
+        padding: $spacer-4 0;
+        font-family: 'Red Hat Display SemiBold';
+        font-size: 16px;
+        line-height: 150%;
+        color: #828098;
+
+        @media screen and (min-width: $tablet) {
+            padding: $spacer-9 0 85px;
+        }
+
+        @media screen and (min-width: $desktop-sm) {
+            font-size: 24px;
+        }
+    }
+
+    &__quote-text {
+        font-family: 'Red Hat Display SemiBoldItalic';
+        font-size: 24px;
+        line-height: 150%;
+
+        @media screen and (min-width: $desktop-sm) {
+            font-size: 32px;
+        }    
+    }
+
+    &__quote-autor {
+        text-align: end;
+    }
+}
