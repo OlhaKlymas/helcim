@@ -88,7 +88,7 @@
         border-radius: 10px;
         box-shadow: 15.2169px 30.4338px 91.3015px rgba(19, 34, 72, 0.12);
         font-size: 14px;
-        font-family: 'Roboto Medium';
+        font-family: $font-secondary, sans-serif;
         line-height: 150%;
     
         @media screen and (min-width: $tablet) {
@@ -127,7 +127,7 @@
     }
 
     &__field-head {
-        font-family: 'Roboto Medium';
+        font-family: $font-secondary, sans-serif;
         font-size: 18px;
         line-height: 150%;
     }
@@ -156,7 +156,7 @@
         @include flex($dir: column, $gap: $spacer-4);
 
         padding-bottom: $spacer-4;
-        font-family: 'Roboto';
+        font-family: $roboto, sans-serif;
         font-size: 20px;
         line-height: 160%;
     

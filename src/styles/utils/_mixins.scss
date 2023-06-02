@@ -23,7 +23,7 @@
     color: $text-color;
     line-height: 160%;
     font-size: $fs;
-    font-family: 'Roboto Medium', sans-serif;
+    font-family: $font-secondary, sans-serif;
 
     &:hover {
         background-color: $hover-color;
@@ -37,7 +37,7 @@
     cursor: pointer;
     color: $text-color;
     font-size: $fs;
-    font-family: 'Red Hat Display Medium', sans-serif;
+    font-family: $rhdMedium, sans-serif;
 
     &::after {
         content: '';

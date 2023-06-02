@@ -61,7 +61,7 @@
         @include flex($dir: column, $gap: $spacer-4, $ai: flex-end);
 
         padding: $spacer-4 0;
-        font-family: 'Red Hat Display SemiBold';
+        font-family: $rhdSemiBold, sans-serif;
         font-size: 16px;
         line-height: 150%;
         color: #828098;
@@ -76,7 +76,7 @@
     }
 
     &__quote-text {
-        font-family: 'Red Hat Display SemiBoldItalic';
+        font-family: $rhdSemiBoldItalic, sans-serif;
         font-size: 24px;
         line-height: 150%;
 

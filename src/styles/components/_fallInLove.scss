@@ -47,7 +47,7 @@
         @include flex($dir: column, $gap: $spacer-2);
 
         font-size: 14px;
-        font-family: 'Roboto';
+        font-family: $roboto;
         line-height: 160%;
 
         @media screen and (min-width: $desktop-sm) {

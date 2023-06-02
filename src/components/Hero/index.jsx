@@ -1,4 +1,4 @@
-import {useState, useRef, useEffect} from 'react';
+import {useRef, useEffect} from 'react';
 
 import {parallax} from './../../animation/parallax';
 import {scrollFadeIn} from './../../animation/fadeIn';
@@ -20,11 +20,7 @@ const Hero = () => {
     const btnRef = useRef(null);
     const headRef = useRef(null);
 
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
     useEffect(() => {
-        window.addEventListener('resize', () => setWindowWidth(window.innerWidth));
-
         const heroBlock = heroBlockRef.current;
         const map = mapRef.current;
         const product = productRef.current;
@@ -33,14 +29,12 @@ const Hero = () => {
         const btn = btnRef.current;
         const head = headRef.current;
 
-        if(windowWidth > 1024) {
-            parallax(heroBlock, map, -20, 100);
-            parallax(heroBlock, product, 15, 100);
-            parallax(heroBlock, order, 5, 100);
-            scrollFadeIn(heroBlock, phone, 'yPercent', 50, 'none');
-            fadeIn(btn, 2);
-            fadeIn(head, 3);
-        }
+        parallax(heroBlock, map, -20, 100);
+        parallax(heroBlock, product, 15, 100);
+        parallax(heroBlock, order, 5, 100);
+        scrollFadeIn(heroBlock, phone, 'yPercent', 50, 'none');
+        fadeIn(btn, 2);
+        fadeIn(head, 3);
     });
 
     return (

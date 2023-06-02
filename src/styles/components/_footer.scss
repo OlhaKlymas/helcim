@@ -2,7 +2,7 @@
     background-color: $orange-light;
     color: #5E5E7B;
     font-size: 16px;
-    font-family: 'Roboto';
+    font-family: $roboto, sans-serif;
 
     &__container {
         @include flex($gap: $spacer-4, $jc: space-between);
@@ -34,7 +34,7 @@
     &__title {
         color: #1D1E46;
         font-size: 20px;
-        font-family: 'Roboto Medium';
+        font-family: $font-secondary, sans-serif;
         line-height: 150%;
     }
 }

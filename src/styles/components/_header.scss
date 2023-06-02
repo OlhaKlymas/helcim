@@ -48,7 +48,7 @@
     }
 
     .nav {
-        font-family: 'Red Hat Display', sans-serif;
+        font-family: $font-primary, sans-serif;
 
         &__list {
             @include flex($jc: center, $ai: center, $gap: $spacer);

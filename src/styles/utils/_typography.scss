@@ -4,7 +4,7 @@ h1 {
     line-height: 115%;
     text-align: center;
     font-size: 32px;
-    font-family: 'Red Hat Display';
+    font-family: $font-primary, sans-serif;
     font-weight: 700;
     
     @media screen and (min-width: $tablet) {
@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Red Hat Display';
+    font-family: $font-primary, sans-serif;
     font-weight: 700;
     font-size: 34px;
     line-height: 115%;
@@ -33,7 +33,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Red Hat Display';
+    font-family: $font-primary, sans-serif;
     font-weight: 700;
     font-size: 32px;
     line-height: 115%;
@@ -60,5 +60,5 @@ h3 {
 }
 
 p {
-    color: #635C7F;
+    color: $grey-text;
 }
