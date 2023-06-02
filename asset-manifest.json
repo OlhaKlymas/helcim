@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/helcim/static/css/main.31091d5e.css",
-    "main.js": "/helcim/static/js/main.0aeadfc8.js",
+    "main.js": "/helcim/static/js/main.66e1fac5.js",
     "static/media/bg.png": "/helcim/static/media/bg.40684f8d7ed556678cd8.png",
     "static/media/slide3.png": "/helcim/static/media/slide3.7aaf66123af415133a60.png",
     "static/media/slide2.png": "/helcim/static/media/slide2.b9875e369a2b69e2323e.png",
@@ -26,10 +26,10 @@
     "static/media/map-home.svg": "/helcim/static/media/map-home.07efc5794d0cf7e7cf91804d59596bda.svg",
     "index.html": "/helcim/index.html",
     "main.31091d5e.css.map": "/helcim/static/css/main.31091d5e.css.map",
-    "main.0aeadfc8.js.map": "/helcim/static/js/main.0aeadfc8.js.map"
+    "main.66e1fac5.js.map": "/helcim/static/js/main.66e1fac5.js.map"
   },
   "entrypoints": [
     "static/css/main.31091d5e.css",
-    "static/js/main.0aeadfc8.js"
+    "static/js/main.66e1fac5.js"
   ]
 }
