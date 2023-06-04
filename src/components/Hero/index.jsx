@@ -1,7 +1,6 @@
 import {useRef, useEffect} from 'react';
 
 import {parallax} from './../../animation/parallax';
-import {scrollFadeIn} from './../../animation/fadeIn';
 import {fadeIn} from './../../animation/fadeIn';
 
 import Button from './../UI/Button';
@@ -16,7 +15,6 @@ const Hero = () => {
     const mapRef = useRef(null);
     const productRef = useRef(null);
     const orderRef = useRef(null);
-    const phoneRef = useRef(null);
     const btnRef = useRef(null);
     const headRef = useRef(null);
 
@@ -25,17 +23,19 @@ const Hero = () => {
         const map = mapRef.current;
         const product = productRef.current;
         const order = orderRef.current;
-        const phone = phoneRef.current;
         const btn = btnRef.current;
         const head = headRef.current;
 
+        setAnimation(heroBlock, map, product, order, btn, head);
+    });
+
+    const setAnimation = (heroBlock, map, product, order, btn, head) => {
         parallax(heroBlock, map, -20, 100);
         parallax(heroBlock, product, 15, 100);
         parallax(heroBlock, order, 5, 100);
-        scrollFadeIn(heroBlock, phone, 'yPercent', 50, 'none');
         fadeIn(btn, 2);
         fadeIn(head, 3);
-    });
+    };
 
     return (
         <section className='container-wide hero' ref={heroBlockRef}>
@@ -54,7 +54,7 @@ const Hero = () => {
                     <div className='hero__order' ref={orderRef}>
                         <HeroOrder />
                     </div>
-                    <div className='hero__phone' ref={phoneRef}>
+                    <div className='hero__phone'>
                         <img src={phone} alt='phone' />
                     </div>
                 </div>

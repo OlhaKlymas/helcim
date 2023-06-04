@@ -12,7 +12,7 @@ export const scrollFadeIn = (trigger, el, direction, value, reverse) => {
     }, {
         scrollTrigger: {
             trigger: trigger,
-            start: '-10% top',
+            start: '-50% top',
             toggleActions: `play none none ${reverse}`
         }, 
         [direction]: 0,

@@ -1,41 +1,53 @@
 .know-product {
     &__container {
-        @include flex($dir: column, $gap: $spacer-4);
+        @include flex($dir: column);
 
-        padding: $spacer-5 $spacer-2;
+        padding: 0 $spacer-2;
     
         @media screen and (min-width: $tablet) {
-            padding-left: $spacer-4;
-            padding-right: $spacer-4;
+            padding: 0 $spacer-4;
+            gap: $spacer-4;
         }
     
         @media screen and (min-width: $desktop-sm) {
             flex-direction: row;
-            padding: $spacer-4;
         }
     
         @media screen and (min-width: $desktop-md) {
             gap: 105px;
-            margin: 150px 0 170px;
         }
     }
 
     &__block {
+        width: 100%;
         position: relative;
         flex-shrink: 0;
-        width: 100%;
-        height: 600px;
-        background-color: #E6ADF1;
-        border-radius: 20px;
-        overflow: hidden;
+        padding: $spacer-5 0;
     
         @media screen and (min-width: $tablet) {
             width: 53%;
         }
     
         @media screen and (min-width: $desktop-sm) {
+            position: sticky;
+            top: 0;
+        }
+    
+        @media screen and (min-width: $desktop-md) {
+            padding: 150px 0 170px;
+        }
+    }
+
+    &__block-wrapper {
+        position: relative;
+        height: 600px;
+        background-color: #E6ADF1;
+        border-radius: 20px;
+        overflow: hidden;
+
+        @media screen and (min-width: $desktop-sm) {
             height: calc(100vh - $spacer-4 * 2);
-            min-height: 712px;
+            min-height: 600px;
         }
     
         @media screen and (min-width: $desktop-md) {
@@ -73,14 +85,14 @@
     &__img {
         width: 343px;
         border-radius: 10px;
-        margin-bottom: 200px;
+        padding-bottom: 120px;
     }
 
     &__form {
         @include flex($dir: column, $gap: $spacer-3);
 
         position: absolute;
-        bottom: 75px;
+        bottom: $spacer-4;
         right: $spacer-2;
         width: 280px;
         background-color: $white;
@@ -153,15 +165,21 @@
     }
 
     &__content {
-        @include flex($dir: column, $gap: $spacer-4);
+        @include flex($dir: column, $gap: $spacer-4, $jc: center);
 
-        padding-bottom: $spacer-4;
+        padding: $spacer-5 0 0;
         font-family: $roboto, sans-serif;
         font-size: 20px;
         line-height: 160%;
     
         @media screen and (min-width: $desktop-sm) {
-            padding-bottom: 30vh;
+            padding: $spacer-5 0;
+            height: 75vh;
+            min-height: 712px;
+        }
+    
+        @media screen and (min-width: $desktop-md) {
+            margin: 150px 0 170px;
         }
     }
 }

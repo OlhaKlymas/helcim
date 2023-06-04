@@ -6,18 +6,34 @@
     width: 100%;
     max-width: 280px;
 
-    &:hover {
-        .front {
-            transform: rotateY(-180deg);
-            opacity: 0;
+    @media screen and (min-width: $desktop-sm) {
+        &:hover {
+            .front {
+                transform: rotateY(-180deg);
+                opacity: 0;
+            }
+    
+            .back {
+                transform: rotateY(0deg);
+                transition: .5s;
+                z-index: 1;
+                box-shadow: 15px 30px 90px rgba(19, 34, 72, 0.12);
+            }
         }
+    }
+}
 
-        .back {
-            transform: rotateY(0deg);
-            transition: .5s;
-            z-index: 1;
-            box-shadow: 15px 30px 90px rgba(19, 34, 72, 0.12);
-        }
+.cartActive {
+    .front {
+        transform: rotateY(-180deg);
+        opacity: 0;
+    }
+
+    .back {
+        transform: rotateY(0deg);
+        transition: .5s;
+        z-index: 1;
+        box-shadow: 15px 30px 90px rgba(19, 34, 72, 0.12);
     }
 }
 

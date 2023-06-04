@@ -114,19 +114,26 @@ const FindYouBelong = () => {
     };
 
     useEffect(() => {
-        window.addEventListener('resize', () => setWindowWidth(window.innerWidth));
-
         const block = blockRef.current;
         const cart = cartRefs.current;
+        
+        setAnimation(block, cart);
 
-        if(windowWidth > 1320) {
-            scrollFadeIn(block, cart, 'x', -100, 'reverse');
-        }
+        window.addEventListener('resize', () => {
+            setWindowWidth(window.innerWidth);
+            setAnimation(block, cart);
+        });
     });
 
     const addToRefs = (el) => {
         if(el && !cartRefs.current.includes(el)) {
             cartRefs.current.push(el);
+        }
+    }
+
+    const setAnimation = (block, cart) => {
+        if(windowWidth > 1320) {
+            scrollFadeIn(block, cart, 'x', -100, 'reverse');
         }
     }
 
